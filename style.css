@@ -1,60 +1,74 @@
 /* Define o estilo geral da página */
 body {
-    /* Cor de fundo preta, substituindo o 'bgcolor' */
     background-color: #000000;
-    
-    /* Cor do texto principal em tom creme/bege */
     color: #F0E68C;
-    
-    /* Fonte padrão para melhor legibilidade */
-    font-family: Arial, sans-serif;
-    
-    /* Garante que não haja margens estranhas */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Uma fonte moderna e legível */
     margin: 0;
-    padding: 20px;
+    padding: 40px 20px; /* Aumentei o padding vertical e mantive o horizontal */
+    display: flex; /* Para centralizar o conteúdo verticalmente no body */
+    justify-content: center; /* Para centralizar o conteúdo horizontalmente no body */
+    align-items: center; /* Para centralizar o conteúdo verticalmente no body */
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    box-sizing: border-box; /* Para que padding não altere a largura total */
 }
 
-/* Um container para centralizar o conteúdo */
+/* Container para o conteúdo principal */
 .container {
-    /* Centraliza todo o texto dentro deste container, substituindo a tag <center> */
     text-align: center;
-    
-    /* Limita a largura máxima para melhor leitura em telas grandes */
     max-width: 800px;
-    
-    /* Centraliza o próprio container na página */
-    margin: 0 auto; 
+    padding: 30px;
 }
 
 /* Estilo para a logo */
 .logo {
-    width: 180px;
-    margin-bottom: 20px; /* Espaço abaixo da logo */
+    max-width: 150px; /* Reduzi a largura máxima da logo */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 30px;
 }
 
 /* Estilo para o título principal */
 h1 {
-    font-size: 2.5em; /* 'em' é uma unidade relativa ao tamanho da fonte pai */
-    color: #FFFFFF; /* Dando um destaque maior para o título principal */
+    font-size: 2.8em; /* Aumentei um pouco para destaque */
+    color: #a7d129; /* Uma cor mais próxima do verde da logo */
+    margin-bottom: 15px;
+    font-weight: bold; /* Deixa o título mais impactante */
 }
 
 /* Estilo para o subtítulo */
 h2 {
-    font-size: 1.5em;
-    font-weight: normal; /* Deixa a fonte menos "grossa" que o h1 */
+    font-size: 1.6em;
+    font-weight: normal;
+    color: #ddd; /* Um tom de cinza claro para contraste */
+    margin-bottom: 25px;
 }
 
 /* Estilo para a linha horizontal */
 hr {
     border: 0;
-    height: 1px;
-    background-color: #F0E68C;
-    width: 50%;
-    margin: 40px auto; /* Espaçamento vertical e centralização horizontal */
+    height: 2px; /* Aumentei a espessura para melhor visualização */
+    background-color: #a7d129; /* Usando a cor da logo */
+    width: 60%; /* Aumentei um pouco a largura */
+    margin: 30px auto;
+}
+
+/* Estilo para os títulos secundários */
+h3 {
+    font-size: 1.4em;
+    color: #F0E68C; /* Mantendo o tom creme/bege */
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
 /* Estilo para parágrafos */
 p {
-    line-height: 1.6; /* Melhora a legibilidade do texto corrido */
-    font-size: 1.1em;
+    line-height: 1.7;
+    font-size: 1.15em;
+    color: #ccc; /* Um tom de cinza mais suave para o texto normal */
+    margin-bottom: 15px;
+}
+
+/* Destacando o texto "1 mês gratuito" */
+strong {
+    color: #a7d129; /* Usando a cor da logo para destacar */
+    font-weight: bolder;
 }
