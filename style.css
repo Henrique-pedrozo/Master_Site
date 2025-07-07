@@ -1,0 +1,60 @@
+/* Define o estilo geral da página */
+body {
+    /* Cor de fundo preta, substituindo o 'bgcolor' */
+    background-color: #000000;
+    
+    /* Cor do texto principal em tom creme/bege */
+    color: #F0E68C;
+    
+    /* Fonte padrão para melhor legibilidade */
+    font-family: Arial, sans-serif;
+    
+    /* Garante que não haja margens estranhas */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Um container para centralizar o conteúdo */
+.container {
+    /* Centraliza todo o texto dentro deste container, substituindo a tag <center> */
+    text-align: center;
+    
+    /* Limita a largura máxima para melhor leitura em telas grandes */
+    max-width: 800px;
+    
+    /* Centraliza o próprio container na página */
+    margin: 0 auto; 
+}
+
+/* Estilo para a logo */
+.logo {
+    width: 180px;
+    margin-bottom: 20px; /* Espaço abaixo da logo */
+}
+
+/* Estilo para o título principal */
+h1 {
+    font-size: 2.5em; /* 'em' é uma unidade relativa ao tamanho da fonte pai */
+    color: #FFFFFF; /* Dando um destaque maior para o título principal */
+}
+
+/* Estilo para o subtítulo */
+h2 {
+    font-size: 1.5em;
+    font-weight: normal; /* Deixa a fonte menos "grossa" que o h1 */
+}
+
+/* Estilo para a linha horizontal */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #F0E68C;
+    width: 50%;
+    margin: 40px auto; /* Espaçamento vertical e centralização horizontal */
+}
+
+/* Estilo para parágrafos */
+p {
+    line-height: 1.6; /* Melhora a legibilidade do texto corrido */
+    font-size: 1.1em;
+}
